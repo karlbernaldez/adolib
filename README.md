@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="assets/adolib.png" width="300">
+<img src="https://raw.githubusercontent.com/karlbernaldez/adolib/main/assets/adolib.png" width="300">
 </h1><br>
 
 
