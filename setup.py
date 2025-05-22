@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="adolib",
-    version="0.2.0",
+    version="0.2.1",
     description="A beginner-friendly Python utilities library",
     author="Karl Santiago Bernaldez",
     author_email="bernaldezkarlsantiago@gmail.com",
