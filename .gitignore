@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+.env
+.vscode/
+tests/
+adolib/__pycache__/
+adolib/adolib.egg-info/
+.pytest_cache/
+tester.py
