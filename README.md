@@ -1,7 +1,7 @@
 
 # AdoLib
 
-> A beginner-friendly utility library for Python developers.
+> A beginner-friendly utility library for Python developers by Adovelopers Team.
 
 **AdoLib** is a collection of small but helpful tools designed to make life easier for new Python developers. Whether you're just learning the language or building your first projects, AdoLib gives you lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
 
