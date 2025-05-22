@@ -7,8 +7,6 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    outputs:
-      version: ${{ steps.extract_version.outputs.version }}
 
     steps:
       - uses: actions/checkout@v4
@@ -21,16 +19,7 @@ jobs:
       - name: Install build tools
         run: |
           python -m pip install --upgrade pip
-          pip install build twine toml
-
-      - name: Extract version from pyproject.toml
-        id: extract_version
-        run: |
-          import toml
-          pyproject = toml.load("pyproject.toml")
-          version = pyproject["project"]["version"]
-          print(f"::set-output name=version::{version}")
-        shell: python
+          pip install build twine
 
       - name: Build package
         run: python -m build
@@ -40,13 +29,3 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: twine upload dist/*
-
-      - name: Create GitHub Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ steps.extract_version.outputs.version }}
-          release_name: Release v${{ steps.extract_version.outputs.version }}
-          draft: false
-          prerelease: false
