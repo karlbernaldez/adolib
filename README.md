@@ -1,7 +1,32 @@
+<h1 align="center">
+<img src="assets/adolib.png" width="300">
+</h1><br>
+
+
+<p align="center">
+  <a href="https://your-site.com">
+    <img src="https://img.shields.io/badge/powered%20by-Adovelopers-orange.svg?style=flat&colorA=E1523D&colorB=007D8A" alt="Powered by Adolib">
+  </a>
+  <a href="https://stackoverflow.com/questions/tagged/adolib">
+    <img src="https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg" alt="Stack Overflow">
+  </a>
+  <a href="https://pypi.org/project/adolib/">
+    <img src="https://img.shields.io/pypi/v/adolib.svg" alt="PyPI version">
+  </a>
+  <a href="https://pypi.org/project/adolib/">
+    <img src="https://img.shields.io/pypi/l/adolib.svg" alt="License">
+  </a>
+</p>
+
+
+AdoLib is a beginner-friendly Python utilities library
+
+- **Website:** https://adovelopers.com/libraries/adolib
+- **Documentation:** https://adovelopers.com/libraries/adolib/docs
+- **Source code:** https://github.com/adovelopers/adolib
+  
 
 # AdoLib
-
-> A beginner-friendly utility library for Python developers by Adovelopers Team.
 
 **AdoLib** is a collection of small but helpful tools designed to make life easier for new Python developers. Whether you're just learning the language or building your first projects, AdoLib gives you lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
 
