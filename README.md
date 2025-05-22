@@ -13,7 +13,7 @@
   <a href="https://pypi.org/project/adolib/">
     <img src="https://img.shields.io/pypi/v/adolib.svg" alt="PyPI version">
   </a>
-  <a href="https://pypi.org/project/adolib/">
+  <a href="https://raw.githubusercontent.com/karlbernaldez/adolib/main/LICENSE">
     <img src="https://img.shields.io/pypi/l/adolib.svg" alt="License">
   </a>
 </p>
