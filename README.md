@@ -1,7 +1,15 @@
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/numpy/numpy/main/assets/adolib.png" width="300">
+</h1><br>
+
+[![Powered by AdoVelopers]()](
+)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/numpy.svg?label=PyPI%20downloads)](
+https://pypi.org/project/adolib/)
+[![Stack Overflow](https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg)](
+https://stackoverflow.com/questions/tagged/numpy)
 
 # AdoLib
-
-> A beginner-friendly utility library for Python developers by Adovelopers Team.
 
 **AdoLib** is a collection of small but helpful tools designed to make life easier for new Python developers. Whether you're just learning the language or building your first projects, AdoLib gives you lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
 
