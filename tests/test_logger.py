@@ -1,6 +1,6 @@
 import io
 import pytest
-from PyAdo.logger import SimpleLogger
+from adolib.logger import SimpleLogger
 
 def test_info_log(capsys):
     logger = SimpleLogger(use_timestamp=False)
@@ -12,10 +12,10 @@ def test_warning_log(capsys):
     logger = SimpleLogger(use_timestamp=False)
     logger.warning("warning test")
     captured = capsys.readouterr()
-    assert "WARNING: warning test" in captured.out
+    assert "WARNING: warning test" in captured.err
 
 def test_error_log(capsys):
     logger = SimpleLogger(use_timestamp=False)
     logger.error("error test")
     captured = capsys.readouterr()
-    assert "ERROR: error test" in captured.out
+    assert "ERROR: error test" in captured.err

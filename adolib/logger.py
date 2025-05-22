@@ -9,9 +9,8 @@ class SimpleLogger:
         "ERROR": "\033[91m",   # Red
     }
 
-    def __init__(self, use_timestamp=True, stream=sys.stdout):
+    def __init__(self, use_timestamp=True):
         self.use_timestamp = use_timestamp
-        self.stream = stream
 
     def _log(self, level, message):
         color = self.COLORS.get(level, self.RESET)
@@ -19,7 +18,12 @@ class SimpleLogger:
         if self.use_timestamp:
             timestamp = datetime.datetime.now().strftime("[%Y-%m-%d %H:%M:%S] ")
         formatted = f"{color}{timestamp}{level}: {message}{self.RESET}"
-        print(formatted, file=self.stream)
+        # Choose stream based on level
+        if level == "INFO":
+            stream = sys.stdout
+        else:  # WARNING and ERROR
+            stream = sys.stderr
+        print(formatted, file=stream)
 
     def info(self, message):
         self._log("INFO", message)
